@@ -1,0 +1,143 @@
+div.container {
+  display:inline-block;
+  float: center;
+}
+h1.powerlevel {
+  color: bloack;
+
+}
+div.calculator {
+  float: center;
+  width: 100%;
+  height: auto;
+}
+body.calculator {
+  float:center;
+  width: 98%;
+  height: auto;
+}
+
+
+p.image-align {
+  text-align:center;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-nav {
+  float: left;
+  margin: 72px;
+}
+
+.top-nav ul {
+  margin: 0;
+  list-style: none;
+}
+
+.top-nav ul li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+
+.top-nav ul li a {
+  font-size: 18px;
+  font-family: 'Shrikhand', cursive;
+  color: pink;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#top-nav-right { float: right;}
+
+.top-nav ul li a:hover {
+  color: black;
+}
+
+header h1 {
+  float: left;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 50px;
+  font-family: 'Bangers', cursive;
+}
+
+header h1 a {
+  text-decoration: uppercase;
+  padding-left: 3em;
+  color: pink;
+
+}
+
+header h1 a:hover {
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-top: 20px solid pink;
+  z-index: 999;
+  background-color: black;
+}
+
+#border {
+  width:95.4%; height:auto;
+  padding: 20px;
+  border:10px dashed pink;
+}
+
+main {
+  min-height: 400px;
+  background-color: #fff;
+}
+
+
+footer h3 a { color: white;}
+footer h3 a:hover {
+  color: pink; }
+footer {
+  font-family: 'Lobster', cursive; font-weight: 11; font-size:15px;
+  color: pink;
+  height: 150px;
+  background-color: black;
+  text-align: center;
+}
+main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #title {
+    position: absolute;
+    text-align: center;
+    width: 98.3%;
+    z-index: 10;
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid #999;
+    font-family: sans-serif;
+  }
+
+  #map{
+    height: 100%;
+    top: 24px;
+  }
+  main.History {
+     background-image: url("http://laoblogger.com/images/dbz-3d-clipart-4.jpg");
+     background-color: #cccccc;
+  }
+
+
+div.ss3 {
+   width:100%;
+   height:auto;
+}

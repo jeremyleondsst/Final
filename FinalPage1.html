@@ -1,0 +1,214 @@
+<!DOCTYPE>
+<html lang="en-US">
+<head>
+    <title>What are Saiyans?</title>
+    <meta charset="utf-8">
+    <script src="Final.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="Final.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+    <link rel="html" href="FinalPage1.html">
+    <link rel="html" href="FinalPage2.html">
+    <link rel="html" href="FinalPage3.html">
+    <link rel="html" href="FinalPage4.html">
+    <link rel="html" href="ExtraFinal.html">
+    <script language="javascript" type="text/javascript">
+    alert("What Are the Saiyans?")
+    </script>
+</head>
+<header>
+<nav id="top-nav-left" class="top-nav">
+      <ul>
+        <li><a href="FinalPage1.html" target="_blank">What</a></li>
+        <li><a href="FinalPage2.html" target="_blank">History</a></li>
+      </ul>
+    </nav>
+     <h1 style="text-align:right;">
+      <a href="Final.html">The Saiyan Race</a>
+    </h1>
+     <nav id="top-nav-right" class="top-nav">
+      <ul>
+        <li><a href="FinalPage3.html" target="_blank">Location</a></li>
+        <li><a href="FinalPage4.html" target="_blank">About</a></li>
+      </ul>
+</nav>
+</header>
+<main>
+  <body>
+    <div class="calculator">
+      <h1 class="powerlevel" style="text-align: center; font-family: 'lobster',cursive;">Calculate your Power Level</hi>
+      <body class="calculator" style="center">
+      <FORM NAME="Calc">
+      <TABLE BORDER=4>
+      <TR>
+      <TD>
+      <INPUT TYPE="text"   NAME="Input" Size="16">
+      <br>
+      </TD>
+      </TR>
+      <TR>
+      <TD>
+      <INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
+      <INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
+      <INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
+      <INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
+      <br>
+      <INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
+      <INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
+      <INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
+      <INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
+      <br>
+      <INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
+      <INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
+      <INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
+      <INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
+      <br>
+      <INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
+      <INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
+      <INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
+      <INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
+      <br>
+      </TD>
+      </TR>
+      </TABLE>
+      </FORM>
+      </body>
+      </div>
+<img src="https://media1.tenor.com/images/5d3022e7d8f6b0e36b86170b676c601c/tenor.gif?itemid=4474083" alt="It's Over 9000 Meme." style=" width: 100%; height: auto;"
+
+</main>
+<title>YouTube APIs example</title>
+</head>
+<body>
+<h1 style="font-family: 'Lobster',cursive">Saiyan Fights</h1>
+
+<div class="wrapper">
+  <div class="controls">
+    <form>
+      <p>
+        <label for="search">Search: </label>
+        <input type="text" id="search" class="search" required>
+      </p>
+      <p>
+        <button class="submit">Submit search</button>
+      </p>
+    </form>
+  </div>
+
+  <div class="results">
+    <section>
+    </section>
+  </div>
+
+</div>
+<script src="https://apis.google.com/js/client.js" type="text/javascript"></script>
+<script src="https://www.youtube.com/iframe_api" type="text/javascript"></script>
+
+<script>
+  // Get references to DOM elements we need to manipulate
+  var searchTerm = document.querySelector('.search');
+  var searchForm = document.querySelector('form');
+  var submitBtn = document.querySelector('.submit');
+  var section = document.querySelector('section');
+  // When the window (tab) has finished loading, run onClientLoad() to get
+  // It all started
+  window.onload = onClientLoad;
+  // Load and inialize the API, then run the onYouTubeApiLoad() function once this is done
+  function onClientLoad() {
+    gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
+  }
+  // Attach your key to the API
+  function onYouTubeApiLoad() {
+    // To get a key for your own application:
+    // 1. Go to https://console.cloud.google.com/apis/dashboard
+    // 2. Create a new project if you've not already got one
+    // 3. Click the Enable API button
+    // 4. Choose YouTube Data API
+    // 5. Click the Enable button
+    // 6. Click create credentials
+    // 7. Select "Web browser (JavaScript)" from the second dropdown
+    // 8. Click the "Public data" radio button
+    // 9. Click the "What credentials do I need?" button
+    // 10. Copy your API key and paste it in below
+    gapi.client.setApiKey('AIzaSyAnITZLq64X5xkf5Zjv5J7lg_ke35R-Xds');
+    // Attach an event listener to the form so that a search is carried out
+    // when it is submitted — the search() function
+    searchForm.addEventListener('submit', search);
+  }
+  function search(e) {
+    // use preventDefault() to stop form actually submitting
+    e.preventDefault();
+    // create a search request using the Data API;
+    var request = gapi.client.youtube.search.list({
+      // set what kind of data the response will include
+      part: 'snippet',
+      // set the number of results that will be returned
+      maxResults: 10,
+      // set the search query to search for
+      q: searchTerm.value
+    });
+    // send the request, and specify a function to run when the response returns
+    request.execute(onSearchResponse);
+  }
+  // This function automatically has the response passed in as a parameter
+  function onSearchResponse(response) {
+    // Empty the <section> element
+    while (section.firstChild) {
+        section.removeChild(section.firstChild);
+    }
+    // Store the actual results of the search in a variable
+    var results = response.items;
+    // loop through the results and run displayVideo() on each
+    for(var i = 0; i < results.length; i++) {
+      displayVideo(results[i], i);
+    }
+  }
+  function displayVideo(result, i) {
+    // Create a div with a unique ID for each video, and append it to the <section>
+    // The YouTube Iframe Player API will replace each one with
+    // an <iframe> containing the corresponding video
+    var vid = document.createElement('div');
+    vidId = 'vid' + i;
+    vid.id = vidId;
+    section.appendChild(vid);
+    // Use the YT.Player() constructor to create a new video player object,
+    // Specifying the ID of the element to be replaced by it (the <div>),
+    // A height and width, and an event handler to handle the custom onReady event
+    var player = new YT.Player(vidId, {
+      height: '360',
+      width: '480',
+      videoId: result.id.videoId,
+      events: {
+        'onReady': onPlayerReady
+      }
+    });
+    function onPlayerReady(e) {
+      var myId = e.target.a.id;
+      var duration = e.target.getDuration();
+      if(duration === 0) {
+        console.log('Video ' + myId + ' cannot be played, so it was deleted.');
+        section.removeChild(e.target.a);
+      } else {
+        var myId = e.target.a.id;
+        console.log('Video ' + myId + ' ready to play.');
+      }
+    }
+  }
+</script>
+
+
+</body>
+
+<footer>
+  <div class="wrapper">
+Saiyans Are Invincible.
+  </div>
+  <h3>
+ <a class="Footer" href="ExtraFinal.html" rel="noopener noreferrer" target="_blank">Learn More</a>
+  </h3>
+</footer>
+
+</html>
